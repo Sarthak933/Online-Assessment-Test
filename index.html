@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Assessment Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section>
+
+        <header class="sign-in">
+            <h1>Online Assessment Test</h1>
+            <form id="form-1">
+                <input type="text" name="username" placeholder="Enter your name">
+                <input type="number" name="userid" placeholder="Enter your registration number">
+                <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
+            </form>
+        </header>
+
+        <main>
+
+            <div class="head">
+                <br><br><center><h1>Online Assessment Test</h1></center><br>
+                <ul>
+                    <li class="userid"></li>
+                    <li class="username"></li>
+                    <li class="page">1/4</li>
+                </ul><br><br>
+            </div>
+
+            <div class="que-cont cont-1">
+
+                <div class="que que-1">
+                    <h1> &nbsp;<span>Q1-</span> &nbsp; &nbsp;Who among the following was the first temporary President of the Constituent Assembly?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Surendra Nath Banerjee</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Subhash Chandra Bose</button></li>
+                        <li><button class="correct" onclick="right_selection(value)" value="1">Dr. Sachchida Nand Sinha</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">K M Cariappa</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-2">
+                    <h1> &nbsp;<span>Q2-</span> &nbsp; &nbsp;The classical/folk dances namely Chakri and Jhulan Leela belong to …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Arunachal Pradesh</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Karnataka</button></li>
+                        <li><button class="correct" onclick="right_selection(value)" value="2">Rajasthan</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Maharashtra</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-3">
+                    <h1> &nbsp;<span>Q3-</span> &nbsp; &nbsp;Ganymede, the largest satellite of solar system, is the moon of …?</h1>
+                    <ul>
+                        <li><button class="correct" onclick="right_selection(1)" value="3">Jupiter</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Saturn</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Neptune</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Mars</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-4">
+                    <h1> &nbsp;<span>Q4-</span> &nbsp; &nbsp;The Central Rice Research Station is situated in... ?</h1>
+                    <ul>
+                        <li><button class="correct" onclick="right_selection(1)" value="4">Cuttack</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Chennai</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Delhi</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Kanpur</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-5">
+                    <h1> &nbsp;<span>Q5-</span> &nbsp; &nbsp;National Institute of Oceanography is located in …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Bengaluru</button></li>
+                        <li><button class="correct" onclick="right_selection(2)" value="5">Panaji</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Hyderabad</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Dehradun</button></li>
+                    </ul>
+                    <button class="sec-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-2">
+
+                <div class="que que-6">
+                    <h1> &nbsp;<span>Q6-</span> &nbsp; &nbsp;How many months are in a year?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">5months</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">25months</button></li>
+                        <li><button class="correct" onclick="right_selection(3)" value="6">12months</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">20months</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-7">
+                    <h1> &nbsp;<span>Q7-</span> &nbsp; &nbsp;The ‘Irani Trophy’ is related to …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Hockey</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Volleyball</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Basketball</button></li>
+                        <li><button class="correct" onclick="right_selection(4)" value="7">Cricket</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-8">
+                    <h1> &nbsp;<span>Q8-</span> &nbsp; &nbsp;National Sugar Research Institute is located in …?</h1>
+                    <ul>
+                        <li><button class="correct" onclick="right_selection(1)" value="8">Kanpur</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Karnal</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Dhanbad</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Lucknow</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-9">
+                    <h1> &nbsp;<span>Q9-</span> &nbsp; &nbsp;The classical/folk dances namely Bharatnatyam and Kavadi belong to …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Arunachal Pradesh</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Karnataka</button></li>
+                        <li><button class="correct" onclick="right_selection(3)" value="9">Tamil Nadu</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Jammu & Kashmir</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-10">
+                    <h1> &nbsp;<span>Q10-</span> &nbsp; &nbsp;National Emblem of Spain is ……….?</h1>
+                    <ul>
+                        <li><button class="correct" onclick="right_selection(1)" value="10">Eagle</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Corn Flower</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Maple Leaf</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Lily</button></li>
+                    </ul>
+                    <button class="third-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-3">
+
+                <div class="que que-11">
+                    <h1> &nbsp;<span>Q11-</span> &nbsp; &nbsp;How many hours are there in one day?</h1>
+                    <ul>
+                        <li><button class="correct" onclick="right_selection(1)" value="11">24hours</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">10hours</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">15hours</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">20hours</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-12">
+                    <h1> &nbsp;<span>Q12-</span> &nbsp; &nbsp;Which among the following cities is known for the paper industry?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Bengaluru</button></li>
+                        <li><button class="correct" onclick="right_selection(2)" value="12">Titigarh</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Bhilai</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Sindri</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-13">
+                    <h1> &nbsp;<span>Q13-</span> &nbsp; &nbsp;The headquarters of World Intellectual Property Organisation (WIPO) is located in …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">New York City</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Rome</button></li>
+                        <li><button class="correct" onclick="right_selection(3)" value="13">Geneva</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Washington D.C.</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-14">
+                    <h1> &nbsp;<span>Q14-</span> &nbsp; &nbsp;The term ‘hook pass’ is related to …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">Football</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Badminton</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">Boxing</button></li>
+                        <li><button class="correct" onclick="right_selection(4)" value="14">Basketball</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-15">
+                    <h1> &nbsp;<span>Q15-</span> &nbsp; &nbsp;Battle of Waterloo was fought between …?</h1>
+                    <ul>
+                        <li><button class="incorrect" onclick="wrong_selection()">British and German forces</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">British and Italian Forces</button></li>
+                        <li><button class="incorrect" onclick="wrong_selection()">British and American Forces</button></li>
+                        <li><button class="correct" onclick="right_selection(4)" value="15">British and French Forces</button></li>
+                    </ul>
+                    <button class="fourth-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+                <div class="que-cont cont-4">
+
+                    <div class="que que-16">
+                        <h1> &nbsp;<span>Q16-</span> &nbsp; &nbsp;How many radians are in a circle?</h1>
+                        <ul>
+                            <li><button class="correct" onclick="right_selection(1)" value="16">2rad</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">4rad</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">360rad</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">0rad</button></li>
+                        </ul>
+                    </div>
+    
+                    <div class="que que-17">
+                        <h1> &nbsp;<span>Q17-</span> &nbsp; &nbsp;Which among the following is popular as Land of White Elephant?</h1>
+                        <ul>
+                            <li><button class="incorrect" onclick="wrong_selection()">Norway</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Denmark</button></li>
+                            <li><button class="correct" onclick="right_selection(3)" value="17">Thailand</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Singapore</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-18">
+                        <h1> &nbsp;<span>Q18-</span> &nbsp; &nbsp;Which among the following is the biggest dam in the world?</h1>
+                        <ul>
+                            <li><button class="incorrect" onclick="wrong_selection()">Jinping-I Dam</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Nurek Dam</button></li>
+                            <li><button class="correct" onclick="right_selection(3)" value="18">Three Gorges Dam</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Robert-Baorassa Dam</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-19">
+                        <h1> &nbsp;<span>Q19-</span> &nbsp; &nbsp;How many countries are there in world?</h1>
+                        <ul>
+                            <li><button class="incorrect" onclick="wrong_selection()">200</button></li>
+                            <li><button class="correct" onclick="right_selection(2)" value="19">195</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">100</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">555</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-20">
+                        <h1> &nbsp;<span>Q20-</span> &nbsp; &nbsp;Who was the founder of Instagram?</h1>
+                        <ul>
+                            <li><button class="incorrect" onclick="wrong_selection()">Kylian Pearson</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Grosjean Rybackerberg</button></li>
+                            <li><button class="incorrect" onclick="wrong_selection()">Mark Paul</button></li>
+                            <li><button class="correct" onclick="right_selection(4)" value="20">Kevin Systrom</button></li>
+                        </ul>
+                        <button class="fifth-page-btn" >Submit <i class="fas fa-caret-right"></i> </button>
+                    </div>
+    
+                </div>
+
+            </main>
+            
+            <div class="result-page">
+                <h1>Result :-</h1>
+                <ul>
+                    <li>Name :- <span class="username"></span> </li>
+                    <li>Reg. No. :- <span class="userid"></span> </li>
+                    <li>Total Questions :- <span>20</span> </li>
+                    <li>Attempted Questions :- <span class="att_que"></span></li>
+                    <li>Correct :- <span class="correct_que"></span> </li>
+                    <li>Incorrect :- <span class="wrong_que"></span> </li>
+                    <li>Status :- <span class="status"></span> </li>
+                </ul>
+                <b>Share your result</b>
+                <ol>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ol>
+            </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
